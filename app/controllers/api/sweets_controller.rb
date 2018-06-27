@@ -42,6 +42,6 @@ class Api::SweetsController < ApplicationController
     end
 
     def sweet_params
-      params.require(:sweet).permit(:name, :ingredients, :directions, :cook_time, :likes)
+      params.require(:sweet).permit(:name, :ingredients, :base, :likes)
     end
 end
